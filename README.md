@@ -22,7 +22,7 @@ Pedro II é conhecida por seu clima agradável, festival de inverno e riquezas n
 * Principais pontos de ecoturismo (cachoeiras e trilhas)
 
 
-## 📸 Galeria de Fotos (Artefatos)
+## 📸 Galeria de Fotos
 Aqui estão algumas das hospedagens e locais que mapeamos no projeto:
 
 | Chalé da Serra | Cachoeira do Urubu Rei | Cachoeira do Salto Liso |
