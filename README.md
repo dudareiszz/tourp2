@@ -1,9 +1,9 @@
 # 🗺️ TourP2 - Guia de Hospedagens em Pedro II - PI
 
-Bem-vindo ao **TourP2**, o projeto integrador desenvolvido pela nossa equipe para a disciplina de Informática. Nosso objetivo é mapear, descrever e divulgar as principais
+Bem-vindo ao **TourP2**, o projeto integrador desenvolvido pela nossa equipe. Nosso objetivo é mapear, descrever e divulgar as principais
 opções de hospedagem, chalés e pontos turísticos da cidade de Pedro II, no Piauí.
 
----
+
 
 ## 👥 Integrantes do Grupo
 * Eduarda Reis
@@ -12,7 +12,7 @@ opções de hospedagem, chalés e pontos turísticos da cidade de Pedro II, no P
 * Eluane Carreiro
 * Gustavo Henrique
 
----
+
 
 ## 🏔️ Sobre o Projeto
 Pedro II é conhecida por seu clima agradável, festival de inverno e riquezas naturais. Este projeto foi criado para ajudar turistas a encontrarem o lugar perfeito para se hospedar. O site reúne informações sobre:
@@ -21,18 +21,18 @@ Pedro II é conhecida por seu clima agradável, festival de inverno e riquezas n
 * Hotéis e pousadas
 * Principais pontos de ecoturismo (cachoeiras e trilhas)
 
----
+
 
 ## 📸 Galeria de Fotos (Artefatos)
 Aqui estão algumas das hospedagens e locais que mapeamos no projeto:
 
-| Chalé na Montanha | Casa de Campo | Cachoeira do Salto |
+| Chalé da Serra | Cachoeira do Urubu Rei | Cachoeira do Salto Liso |
 | :---: | :---: | :---: |
-| ![Chalé](chale.jpeg) | ![Casas](casas.jpg) | ![Cachoeira](cachoeira.jpg) |
+| ![Chalé](chale.jpeg) | ![Cachoeira](cachoeira.jpg) | ![Cachoeira](saltoliso.jpg) |
 
----
 
-## 🛠️ Tecnologias Utilizadas
+
+## 🖥️ Tecnologias Utilizadas
 O projeto foi desenvolvido utilizando as seguintes tecnologias web:
 * **HTML5:** Para a estruturação das páginas e textos.
 * **CSS3:** Para a estilização, cores e design do site.
