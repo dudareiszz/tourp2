@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hospedagem Pedro II</title>
+  <style>
+    * { 
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+     }
+   
+    body {
+     background-color: #4e2c13;
+    }
+
+    header {
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 { color: #f2f6f5; }
+    nav a, .btn-voltar {
+      color: #f2f7f6;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #fff; }
+    section { padding: 60px 20px; text-align: center; }
+    h2 { margin-bottom: 30px; color: #ebf3ed; }
+    .chales {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .chale {
+      background-color: #834e29;
+      border-radius: 15px;
+      overflow: hidden;
+      width: 320px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .chale:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    }
+    .chale img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      margin-top: 10px;
+    }
+    .chale h3 { padding: 15px; color: #f1f5f4; }
+    .chale p { padding: 0 15px 15px; color: #ddd; font-size: 0.95em; }
+    .btn-inicio, .btn-voltar {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #eff3f2;
+      color: #4c3626;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      cursor: default;
+    }
+    .btn-inicio:hover, .btn-voltar:hover { background-color: #c9f0d3; }
+    footer {
+      background-color: #4c3626;
+      padding: 20px;
+      text-align: center;
+      margin-top: 50px;
+      color: #9fd3c7;
+    }
+    @media(max-width: 960px) {
+      .chales, .contatos { flex-direction: column; align-items: center; }
+      header { flex-direction: column; gap: 15px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="hospedagens.html">Hospedagens</a>
+      <a href="pontos.html">Pontos Turísticos</a>
+      <a href="eventos.html">Eventos</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bem-vindo a Pedro II!</h2>
+    <p>Descubra os chalés mais charmosos da cidade e viva experiências inesquecíveis.</p>
+  </section>
+
+  <section id="chalés">
+    <h2>Hospedagens</h2>
+    <div class="chales">
+      
+      
+      <div class="chale">
+        <img src="serraparkk.jpg" alt="Chalé Encanto das Águas">
+        <h3>Serra Park Chalés</h3>
+        <p>Um refúgio encantador na Serra dos Matões, rodeado por paisagens únicas e natureza pura.</p>
+
+        <p><strong>Telefone:</strong> (86) 99888-1010</p>
+        <p><strong>Email:</strong> serrapark@pedroii.com</p>
+        <p><strong>Endereço:</strong> Serra dos Matões, Pedro II - PI</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.027466267573!2d-41.4715!3d-4.4273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e978b6d6559b3%3A0x3d6a7b2a6d15f257!2sSerra%20Park%20Chal%C3%A9s!5e0!3m2!1spt-BR!2sbr!4v1698765123456"></iframe>
+      </div>
+
+      
+      <div class="chale">
+        <img src="https://fmimperial.com.br/public/gallery/principal/bdc75cd31312eb3b179184ec84a23502.jpg" alt="Chalé Serra dos Matões">
+        <h3>Chalé Serra dos Matões</h3>
+        <p>Situado entre montanhas, é ideal para quem busca sossego e um contato direto com o verde.</p>
+        <p><strong>Telefone:</strong> (86) 99777-2020</p>
+        <p><strong>Email:</strong> serradosmatoes@pedroii.com</p>
+        <p><strong>Endereço:</strong> Zona Rural, Pedro II - PI</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.0506248709894!2d-41.4520!3d-4.4300!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e9792d4b05d2b%3A0x6789c3d8f3b92f5!2sChal%C3%A9%20Serra%20dos%20Mat%C3%B5es!5e0!3m2!1spt-BR!2sbr!4v1698765234567"></iframe>
+      </div>
+
+      
+      <div class="chale">
+        <img src="serrapark.jpg" alt="Chalé Vale do Sol">
+        <h3>Cabana Vila Suíça</h3>
+        <p>Inspirada no charme europeu, oferece conforto e uma vista incrível do pôr do sol pedrosegundense.</p>
+        <p><strong>Telefone:</strong> (86) 99666-3030</p>
+        <p><strong>Email:</strong> vilasuica@pedroii.com</p>
+        <p><strong>Endereço:</strong> Mirante do Gritador, Pedro II</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.0648794980974!2d-41.4560!3d-4.4342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e97955c5a1a1%3A0x89d22df2b3d5423!2sCabana%20Vila%20Su%C3%AD%C3%A7a!5e0!3m2!1spt-BR!2sbr!4v1698765345678"></iframe>
+      </div>
+      <div class="chale">
+  <img src="vista.jpg">
+  <h3>Chalé Vista da Serra</h3>
+  <p>Chalés em meio à natureza, com tranquilidade e clima serrano pedrosegundense.</p>
+  <p><strong>Telefone:</strong>(86)7645-4098</p>
+  <p><strong>Email:</strong> Vistadaserra@gmail.com</p>
+  <p><strong>Enderenço:</strong> Serra Pedro II</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.0672143!2d-41.455218!3d-4.433987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e9790bfa2c2f%3A0x1b5d3c9e8f4a7c21!2sChal%C3%A9%20Vista%20da%20Serra!5e0!3m2!1spt-BR!2sbr!4v1705600000002">
+  </iframe>
+</div><div class="chale">
+  <img src="brisa.jpg">
+  <h3>Hotel Brisa da Ponte</h3>
+  <p>Hotel confortável e muito bem localizado no centro de Pedro II.Òtimo para quem quer ficar no meio da cidade.</p>
+  <p><strong>Telefone:</strong> (86) 99666-3030</p>
+  <p><strong>Email:</strong> Brisadaponte@gmail.com</p>
+  <p><strong>Endereço:</strong> vila pedro ii</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.0438516!2d-41.466684!3d-4.428632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e97ab3f7c4a0f%3A0x4f2d5b1b1a5d8b7a!2sHotel%20Brisa%20da%20Ponte!5e0!3m2!1spt-BR!2sbr!4v1705600000001">
+  </iframe>
+</div>
+
+      
+      
+
+      
+      <div class="chale">
+        <img src="talisma.jpg" alt="Hotel Talisman">
+        <h3>Hotel Talisman</h3>
+        <p>Localizado em meio a uma avenida, ideal para quem busca descanso em pedro ii no Piauí .</p>
+        <p><strong>Telefone:</strong> (86) 99444-5050</p>
+        <p><strong>Email:</strong> HotelTalisman@pedroii.com</p>
+        <p><strong>Endereço:</strong> Talisman, Pedro II - PI</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.031234!2d-41.4650!3d-4.4290!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e97aaa3333aaaa%3A0xcccccccccccccc!2sBosque%20Encantado!5e0!3m2!1spt-BR!2sbr!4v1698765550000"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+ 
+</body>
+</html>

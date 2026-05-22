@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos | Tour P2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #E50000;
+            --background-dark: #4e2c13;
+            --text-light: #ffffff;
+            --text-grey: #d6d6d6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-dark);
+            color: var(--text-light);
+        }
+
+        .opala {
+            height: 70vh;
+            background-image: url('fetejo.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            padding-top: 10px;
+        }
+
+        .opala::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.75);
+        }
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 5vw;
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+
+        .logo-img {
+            width: 45px;
+        }
+
+        .links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .links a {
+            text-decoration: none;
+            color: var(--text-grey);
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .links a:hover {
+            color: var(--text-light);
+        }
+
+        .hero-conteudo {
+            position: relative;
+            z-index: 2;
+            padding: 0 5vw;
+            margin-top: 15vh;
+            max-width: 600px;
+        }
+
+        .hero-conteudo h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .hero-conteudo p {
+            margin-top: 15px;
+            color: var(--text-grey);
+        }
+
+        section {
+            padding: 80px 5vw;
+        }
+
+        .titulo-secao {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 50px;
+        }
+
+        .grid-eventos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .card-evento {
+            height: 320px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .card-evento::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+        }
+
+        .info-evento {
+            position: relative;
+            padding: 20px;
+        }
+
+        .categoria {
+            color: var(--primary-color);
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .nome-evento {
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .detalhes {
+            font-size: 0.85rem;
+            color: var(--text-grey);
+            margin-top: 5px;
+        }
+
+        .evento-destaque {
+            margin-top: 80px;
+            background-image: url('festa.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            position: relative;
+            padding: 60px;
+        }
+
+        .evento-destaque::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.8);
+            border-radius: 15px;
+        }
+
+        .evento-destaque-conteudo {
+            position: relative;
+            max-width: 500px;
+        }
+
+        .evento-destaque h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+
+        .evento-destaque p {
+            margin: 15px 0;
+            color: var(--text-grey);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 25px;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 900px) {
+            .grid-eventos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-conteudo h1 {
+                font-size: 3rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid-eventos {
+                grid-template-columns: 1fr;
+            }
+
+            .links {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="opala">
+    <nav class="menu">
+        <ul class="links">
+            <li><a href="tour.html">Início</a></li>
+            <li><a href="hospedagens.html">Hospedagens</a></li>
+            <li><a href="indexx.html">Pontos Turísticos</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-conteudo">
+        <h1>EVENTOS DE PEDRO II</h1>
+        <p>Cultura, tradição e música durante todo o ano.</p>
+    </div>
+</header>
+
+<main>
+    <section>
+        <h2 class="titulo-secao">Agenda Cultural</h2>
+
+        <div class="grid-eventos">
+            <div class="card-evento" style="background-image: url('festival.jpeg');">
+                <div class="info-evento">
+                    <span class="categoria">CULTURAL</span>
+                    <h3 class="nome-evento">Festival de Inverno</h3>
+                    <p class="detalhes">Junho • Praça Domingos Mourão</p>
+                </div>
+            </div>
+
+            <div class="card-evento" style="background-image: url('artes.jpeg');">
+                <div class="info-evento">
+                    <span class="categoria">ARTESANATO</span>
+                    <h3 class="nome-evento"> Feira Artesanal</h3>
+                    <p class="detalhes">Junho • Praça da Matriz </p>
+                </div>
+            </div>
+
+            <div class="card-evento" style="background-image: url('igreja.jpg');">
+                <div class="info-evento">
+                    <span class="categoria">RELIGIOSO</span>
+                    <h3 class="nome-evento">Festa da Padroeira</h3>
+                    <p class="detalhes">Novembro • Igreja Matriz</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="evento-destaque">
+            <div class="evento-destaque-conteudo">
+                <span class="categoria">EVENTO PRINCIPAL</span>
+                <h2>Festival de Inverno de Pedro II</h2>
+                <p>O maior evento cultural da cidade, reunindo música, gastronomia e arte em um clima serrano único.</p>
+                <a href="festival.html" class="btn">Ver Programação</a>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>

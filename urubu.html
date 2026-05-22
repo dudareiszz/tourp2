@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cachoeira do Urubu Rei - Pedro II</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(
+        180deg,
+        rgba(43, 26, 16, 0.85) 0%,
+        #4e2c13 100%
+      );
+      color: #fff;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .btn-voltar {
+      position: fixed;
+      top: 25px;
+      left: 25px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #fff;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      text-decoration: none;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 15px rgba(255,255,255,0.05);
+      cursor: pointer;
+      transition: none !important;
+      pointer-events: auto;
+    }
+
+    .btn-voltar:hover,
+    .btn-voltar:active,
+    .btn-voltar:focus {
+      background: rgba(255, 255, 255, 0.15);
+      transform: none;
+      box-shadow: 0 0 15px rgba(255,255,255,0.05);
+      color: #fff;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.85)),
+                  url('chumbo.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 80px 40px;
+      text-align: left;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      text-shadow: 0 3px 15px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 1rem;
+      color: #f0f0f0;
+      line-height: 1.6;
+      margin-bottom: 35px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .btn-map {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #fff;
+      padding: 10px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      backdrop-filter: blur(6px);
+      transition: none;
+    }
+
+    section.content {
+      padding: 70px 25px;
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    section.content h2 {
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    section.content p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #f3f3f3;
+      margin-bottom: 40px;
+    }
+
+    .info-list {
+      list-style: none;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .info-list li {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      position: relative;
+      padding-left: 25px;
+      color: #f5f5f5;
+    }
+
+    .info-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: rgba(255,255,255,0.8);
+      font-size: 1.3rem;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 768px) {
+      .btn-voltar {
+        width: 45px;
+        height: 45px;
+        font-size: 1.5rem;
+      }
+      .hero { padding: 60px 25px; }
+      .hero h1 { font-size: 2.3rem; }
+      section.content h2 { font-size: 1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="btn-voltar">←</a>
+
+  <section class="hero">
+    <h1>Cachoeira do Urubu Rei</h1>
+    <p>Uma das mais belas cachoeiras de Pedro II, a Urubu Rei impressiona pela força das águas e pela paisagem natural que a cerca, tornando-se um refúgio perfeito para os amantes da natureza.</p>
+    <a href="https://maps.app.goo.gl/SDo6mFM7cv8S8KwY9" target="_blank" class="btn-map">Ver no mapa</a>
+  </section>
+
+  <section class="content">
+    <h2>Sobre o local</h2>
+    <p>
+      A <strong>Cachoeira do Urubu Rei</strong> é um dos destinos mais visitados de Pedro II. 
+      Rodeada por vegetação nativa e rochas milenares, o local encanta visitantes com sua beleza bruta e seu som intenso das quedas d’água. 
+      É o ponto ideal para quem busca aventura, tranquilidade e um contato autêntico com a natureza.
+    </p>
+
+    <ul class="info-list">
+      <li><strong>Localização:</strong> Situada na zona rural de Pedro II, a cerca de 20 km do centro da cidade.</li>
+      <li><strong>Acesso:</strong> Estrada parcialmente asfaltada com trecho final em trilha leve e bem sinalizada.</li>
+      <li><strong>Altura da queda:</strong> Aproximadamente 25 metros de altura.</li>
+      <li><strong>Águas:</strong> Frias, límpidas e ideais para banho e contemplação.</li>
+      <li><strong>Ambiente:</strong> Vegetação densa e paredões rochosos que criam uma paisagem cinematográfica.</li>
+      <li><strong>Ideal para:</strong> Trilha, ecoturismo, banho e fotografia.</li>
+    </ul>
+  </section>
+
+</body>
+</html>

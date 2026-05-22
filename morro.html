@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morro do Gritador - Pedro II</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(
+        180deg,
+        rgba(78, 44, 19, 0.9) 0%,
+        rgba(78, 44, 19, 1) 100%
+      );
+      color: #fff;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .btn-voltar {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: #fff;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(6px);
+      text-decoration: none;
+      z-index: 10;
+    }
+
+    .btn-voltar:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-3px);
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      background:
+        linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.85)),
+        url('vdd.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 80px 40px;
+      text-align: left;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      text-shadow: 0 3px 15px rgba(0,0,0,0.6);
+    }
+
+    .hero p {
+      max-width: 650px;
+      font-size: 1rem;
+      color: #f0f0f0;
+      line-height: 1.6;
+      margin-bottom: 35px;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .btn-map {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #fff;
+      padding: 10px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(6px);
+    }
+
+    .btn-map:hover {
+      background: rgba(255,255,255,0.3);
+      transform: translateY(-2px);
+    }
+
+    section.content {
+      padding: 70px 25px;
+      max-width: 850px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    section.content h2 {
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+      letter-spacing: 1px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    section.content p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #f3f3f3;
+      margin-bottom: 40px;
+    }
+
+    .info-list {
+      list-style: none;
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .info-list li {
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+      line-height: 1.7;
+      position: relative;
+      padding-left: 25px;
+      color: #f5f5f5;
+    }
+
+    .info-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: rgba(255,255,255,0.8);
+      font-size: 1.3rem;
+    }
+
+    footer {
+      background: rgba(78, 44, 19, 0.85);
+      padding: 20px;
+      text-align: center;
+      color: #ddd;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 60px 25px;
+      }
+
+      .hero h1 {
+        font-size: 2.3rem;
+      }
+
+      section.content h2 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="index.html" class="btn-voltar">←</a>
+
+  <section class="hero">
+    <h1>Morro do Gritador</h1>
+    <p>
+      Um dos pontos mais altos de Pedro II, o Morro do Gritador encanta com sua vista panorâmica
+      e clima agradável, sendo um dos principais cartões-postais da cidade.
+    </p>
+    <a href="https://maps.app.goo.gl/q5FzE9b7QKsJXfqH8" target="_blank" class="btn-map">
+      Ver no mapa
+    </a>
+  </section>
+
+  <section class="content">
+    <h2>Sobre o local</h2>
+    <p>
+      Localizado a cerca de 12 km do centro de Pedro II, no estado do Piauí,
+      o <strong>Morro do Gritador</strong> é um dos mirantes naturais mais impressionantes do Nordeste.
+      Com altitude superior a 600 metros, oferece uma vista de tirar o fôlego.
+    </p>
+
+    <ul class="info-list">
+      <li><strong>Localização:</strong> Zona rural de Pedro II, Piauí.</li>
+      <li><strong>Altitude:</strong> Mais de 600 metros.</li>
+      <li><strong>Acesso:</strong> Estrada asfaltada.</li>
+      <li><strong>Principal atração:</strong> Vista panorâmica.</li>
+      <li><strong>Clima:</strong> Agradável o ano todo.</li>
+      <li><strong>Ideal para:</strong> Fotografia e contemplação.</li>
+    </ul>
+  </section>
+
+
+
+</body>
+</html>

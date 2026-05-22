@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour P2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<style>
+
+:root {
+    --primary-color: #E50000;
+    --background-dark: #4e2c13;
+    --text-light: #ffffff;
+    --text-grey: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+
+.opala{
+    position: relative;
+    height: 100vh;
+    background-image: url( cachoeira.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-color: rgba(0,0,0,0.4); 
+    background-blend-mode: darken; 
+    display: flex;
+    flex-direction: column;
+}
+
+.fundoescuro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 30%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.9) 100%);
+    z-index: 1;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5vw;
+    z-index: 2;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    display: flex;           
+    align-items: center;     
+    gap: 10px;           
+}
+
+.logo-img {
+  width: 50px;            
+  height: auto;
+}
+
+
+.ponto {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #d6d6d6;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    color: rgb(255, 255, 255); 
+}
+
+.conteudo-principal-opala{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 5vw 40px;
+    z-index: 2;
+    color: white;
+}
+
+.titulo-principal {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 0.9;
+    margin-top: 10vh;
+}
+
+.grid-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 50px;
+    gap: 20px;
+    color: var(--text-grey);
+    font-size: 0.85rem;
+    max-width: 900px;
+    margin-top: auto;
+}
+
+.item-info {
+    padding-right: 20px;
+}
+
+.lista-numeros {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 1.2rem;   font-weight: 600;
+}
+
+.item-numero {
+    line-height: 1.2;
+    opacity: 0.3;
+}
+
+.item-numero.atual {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+.indicador-rolagem {
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
+.indicador-rolagem i {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+
+main {
+    padding-top: 100px;
+}
+
+.secao-recomendacoes {
+    text-align: center;
+    padding: 0 5vw 100px;
+}
+
+.subtitulo-secao {
+    color: var(--text-grey);
+    font-weight: 300;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.titulo-secao {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.container-cartoes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.cartao-destino {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.cartao-destino:hover {
+    transform: translateY(-10px);
+}
+
+.cartao-1 { background-image: url('chale2.jpeg'); }
+.cartao-2 { background-image: url('urubu.jpeg'); }
+.cartao-3 { background-image: url('mercado.jpeg'); }
+.cartao-4 { background-image: url('gri.jpg'); }
+
+.sobreposicao-cartao {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.detalhe-cartao {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;}
+
+.nome-lugar {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+
+.secao-destaque {
+    padding: 50px 5vw 100px;
+    position: relative;
+    background-image: url('portalpe.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.secao-destaque::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    opacity: 60%;
+}
+
+.secao-destaque > * {
+    position: relative;
+    z-index: 2;
+}
+
+.titulo-secao-2 {
+    font-size: 3rem;
+    font-weight: 800;
+    max-width: 500px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.conteudo-destaque {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.texto-e-link {
+    max-width: 400px;
+}
+
+.escolha-divertida {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: upercase;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.icone-video {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.descricao {
+    color: var(--text-light);
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.galeria-midia {
+    display: flex;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.placeholder-video-principal {
+    width: 300px;
+    height: 400px;
+    background-color: #333;
+    background-image: url('chale.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.placeholder-video-principal::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.linha-miniaturas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.placeholder-miniatura {
+    width: 150px;
+    height: 100px;
+    background-color: #555;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.miniatura-1 { background-image: url('memorial.jpg'); background-size: cover; } 
+.miniatura-2 { background-image: url('casas.jpg'); background-size: cover; } 
+
+
+.link-social {
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--text-grey);
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+    .menu-navegacao {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 10px;
+    }
+
+    .links{
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .titulo-principal {
+        font-size: 3.5rem;
+        color: white;
+    }
+
+    .grid-info {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        font-size: 0.8rem;
+    }
+
+    .lista-numeros {
+        display: none;
+    }
+    
+    .container-cartoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartao-destino {
+        width: 100%;
+        max-width: 350px;
+        height: 250px;
+    }
+
+    .titulo-secao-2 {
+        font-size: 2rem;
+        color: white;
+    }
+
+    .conteudo-destaque {
+        flex-direction: column;
+    }
+
+    .galeria-midia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .placeholder-video-principal {
+        width: 100%;
+        height: 300px;
+        max-width: 400px;
+    }
+
+    .linha-miniaturas {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+
+
+
+</style>
+<body>
+
+
+
+<header class="opala">
+        <div class="fundoescuro"></div>
+
+<nav class="menu">
+  <span class="logo">
+    <img src="logo2.png" alt="Logo" class="logo-img">
+    TOUR P2
+  </span>
+<ul class="links">
+  <li><a href="tour.html">Inicio</a></li>
+  <li><a href="hospedagens.html">Hospedagens</a></li>
+  <li><a href="indexx.html">Pontos Turísticos</a></li>
+  <li><a href="eventos.html">Eventos</a></li>
+</ul>
+</nav>
+
+        <div class="conteudo-principal-opala">
+            
+            <h1 class="titulo-principal">HOSPEDE-SE EM PEDRO II</h1>
+            
+        <div class="grid-info">
+               
+            <div class="item-info">
+            <p><strong>Serra dos Matões:</strong> A região serrana é ideal para trilhas e cachoeiras, com um clima agradável e paisagens únicas.</p>
+            </div>
+               
+            
+            <div class="item-info">
+                    <p><strong>Minas de Opala:</strong> Conhecida como a Capital da Opala, explore as minas e encontre joias raras.</p>
+            </div>
+                
+
+            <div class="item-info">
+                    <p><strong>Festival de Inverno:</strong> O principal evento da cidade, atraindo turistas com música e cultura todo ano.</p>
+        </div>
+             
+
+            <p class="indicador-rolagem">ROLE PARA VER MAIS <i class="ri-arrow-down-line"></i></p>
+        </div>
+</header>
+<main>
+        <section class="secao-recomendacoes">
+            <p class="subtitulo-secao">O que visitar?</p>
+            <h2 class="titulo-secao">LUGARES IMPERDÍVEIS</h2>
+            
+            <div class="container-cartoes">
+                <div class="cartao-destino cartao-1">
+                    <div class="sobreposicao-cartao">
+                        <span class="detalhe-cartao">HOSPEDAGEM</span>
+                        <h3 class="nome-lugar">Chalé da Serra</h3>
+                    </div>
+                </div>
+               
+               
+               
+                <div class="cartao-destino cartao-2">
+                    <div class="sobreposicao-cartao">
+                        <span class="detalhe-cartao">NATUREZA</span>
+                        <h3 class="nome-lugar">Cachoeira do Urubu Rei</h3>
+                    </div>
+                </div>
+                
+                
+               
+                <div class="cartao-destino cartao-3">
+                    <div class="sobreposicao-cartao">
+                        <span class="detalhe-cartao">ARTESANATO</span>
+                        <h3 class="nome-lugar">Mercado do Artesão</h3>
+                    </div>
+                </div>
+                <div class="cartao-destino cartao-4">
+                    <div class="sobreposicao-cartao">
+                        <span class="detalhe-cartao">NATUREZA</span>
+                        <h3 class="nome-lugar">Morro do Gritador</h3>
+                    </div>
+                </div>
+        
+</section>
+
+  <section class="secao-destaque">
+            <h2 class="titulo-secao-2">APROVEITE SUA ESTADIA</h2>
+            <div class="conteudo-destaque">
+                <div class="texto-e-link">
+                    <p class="escolha-divertida">
+                        <span class="icone-video"></span> A melhor escolha para sua viagem
+                    </p>
+                    <p class="descricao">Pedro II possui um clima serrano único no Piauí, ideal para quem busca tranquilidade e contato com a natureza. Não deixe de conhecer a produção de opala e os eventos locais.</p>
+                </div>
+                <div class="galeria-midia">
+                    <div class="placeholder-video-principal">
+                        </div>
+                    <div class="linha-miniaturas">
+                        <div class="placeholder-miniatura miniatura-1"></div>
+                        <div class="placeholder-miniatura miniatura-2"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="link-social">Siga-nos: @tour_p2</p>
+        </section>
+
+    </main>
+
+</body>
+</html>
+

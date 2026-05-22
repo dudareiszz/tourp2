@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Festival de Inverno - Pedro II</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-color: #660404;
+      --secondary-color: #ffffff;
+      --background-dark: #4e2c13;
+      --text-light: #fff;
+      --card-bg: #6b341b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+     body {
+  font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('fes.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--text-light);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+
+    a {
+      text-decoration: none;
+      color: var(--text-light);
+    }
+
+    .voltar {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #fff;
+      z-index: 10;
+      opacity: 0.85;
+      transition: 0.3s;
+    }
+
+    .voltar:hover {
+      opacity: 1;
+      transform: translateX(-5px);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 5vw 60px;
+    }
+
+    .descricao-evento h2,
+    .programacao h2 {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .descricao-evento p {
+      margin-bottom: 18px;
+      opacity: 0.95;
+      font-size: 1.05rem;
+    }
+
+    .linha {
+      width: 100%;
+      height: 3px;
+      background: var(--primary-color);
+      border-radius: 2px;
+      margin: 40px 0;
+      opacity: 0.7;
+    }
+
+    .dia-programacao {
+      margin-bottom: 40px;
+    }
+
+    .dia-programacao h3 {
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+
+    .item-programacao {
+      display: flex;
+      gap: 25px;
+      padding: 18px 20px;
+      background: var(--card-bg);
+      border-left: 4px solid var(--primary-color);
+      border-radius: 6px;
+      margin-bottom: 15px;
+      transition: 0.3s;
+    }
+
+    .item-programacao:hover {
+      background: #3a240b;
+      transform: translateX(5px);
+    }
+
+    .horario {
+      font-weight: 700;
+      font-size: 1.1rem;
+      min-width: 80px;
+      color: var(--secondary-color);
+    }
+
+    .info strong {
+      font-size: 1.05rem;
+    }
+
+    .info p {
+      font-size: 0.9rem;
+      opacity: 0.85;
+      margin-top: 3px;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      background: var(--card-bg);
+      box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+      transition: 0.35s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 35px rgba(0,0,0,0.6);
+    }
+
+    @media (max-width: 600px) {
+      .item-programacao {
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<a href="eventos.html" class="voltar">←</a>
+
+<main>
+
+  <section class="descricao-evento">
+    <h2>Festival de Inverno de Pedro II</h2>
+
+    <p>
+      O Festival de Inverno de Pedro II é o principal evento cultural do município, reunindo música,
+      arte, gastronomia e tradições regionais.
+    </p>
+
+    <p>
+      Durante o festival acontecem shows, apresentações artísticas, feiras de artesanato,
+      exposições e experiências culturais únicas.
+    </p>
+  </section>
+
+  <div class="linha"></div>
+
+  <section class="programacao">
+    <h2>Programação Oficial</h2>
+
+    <div class="dia-programacao">
+      <h3>📅 Quinta-feira • 12 de Junho</h3>
+
+      <div class="item-programacao">
+        <span class="horario">18:00</span>
+        <div class="info">
+          <strong>Abertura do Festival</strong>
+          <p>Palco Principal • Praça Domingos Mourão</p>
+        </div>
+      </div>
+
+      <div class="item-programacao">
+        <span class="horario">19:30</span>
+        <div class="info">
+          <strong>Feira de Artesanato & Gastronomia</strong>
+          <p>Praça da Matriz</p>
+        </div>
+      </div>
+
+      <div class="item-programacao">
+        <span class="horario">21:30</span>
+        <div class="info">
+          <strong>Show Musical – Atração Nacional</strong>
+          <p>Palco Principal</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="dia-programacao">
+      <h3>📅 Sexta-feira • 13 de Junho</h3>
+
+      <div class="item-programacao">
+        <span class="horario">18:00</span>
+        <div class="info">
+          <strong>Apresentações Culturais</strong>
+          <p>Teatro Municipal</p>
+        </div>
+      </div>
+
+      <div class="item-programacao">
+        <span class="horario">20:00</span>
+        <div class="info">
+          <strong>Show Regional</strong>
+          <p>Palco Cultural</p>
+        </div>
+      </div>
+
+      <div class="item-programacao">
+        <span class="horario">22:00</span>
+        <div class="info">
+          <strong>Show Principal da Noite</strong>
+          <p>Palco Principal</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="linha"></div>
+
+  <section class="galeria">
+    <img src="festa.jpg" alt="Show no Festival de Inverno">
+    <img src="vanessa.jpg" alt="Vanessa da Mata no Festival">
+    <img src="frejat.jpg" alt="Frejat no Festival">
+  </section>
+
+</main>
+
+</body>
+</html>
