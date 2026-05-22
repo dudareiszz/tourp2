@@ -21,15 +21,16 @@ Pedro II é conhecida por seu clima agradável, festival de inverno e riquezas n
 * Hotéis e pousadas
 * Principais pontos de ecoturismo (cachoeiras e trilhas)
 
-
+<div align="center">
 
 ## 📸 Galeria de Fotos (Artefatos)
 Aqui estão algumas das hospedagens e locais que mapeamos no projeto:
 
 | Chalé da Serra | Cachoeira do Urubu Rei | Cachoeira do Salto Liso |
 | :---: | :---: | :---: |
-| <img src="chale.jpeg" width="250"> | <img src="urubu.jpeg" width="250"> | <img src="saltoliso.jpg" width="250"> |
+|<img src="chale.jpeg" width="240" style="border-radius: 8px;"> | <img src="urubu.jpeg" width="240" style="border-radius: 8px;"> | <img src="saltoliso.jpg" width="240" style="border-radius: 8px;"> |
 
+</div>
 
 ## 🖥️ Tecnologias Utilizadas
 O projeto foi desenvolvido utilizando as seguintes tecnologias web:
